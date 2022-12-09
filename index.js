@@ -26,7 +26,7 @@ transporter.verify(function (error, success) {
     }
 })
 
-cron.schedule('* * * * *', async () => {
+cron.schedule('0 10 * * *', async () => {
     try {
         const driver = new Builder().forBrowser("chrome").build()
 
